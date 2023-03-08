@@ -1,0 +1,18 @@
+.task {
+    text-align: center;
+    color: red;
+}
+
+.task-completed {
+    text-align: center;
+    color: green;
+}
+
+.task-icons {
+    display: flex;
+    justify-content: center;
+
+    .task-icon {
+        margin: 10px;
+    }
+}

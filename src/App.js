@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import TaskList from './components/TaskList';
+import Task from './components/Task';
+import './assets/style.scss';
+
+export const URL = process.env.REACT_APP_SERVER_URL;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="task-container">
+        <TaskList />
+      </div>
+      <ToastContainer />
     </div>
   );
 }
 
 export default App;
+
+// http://192.168.181.12:3000
